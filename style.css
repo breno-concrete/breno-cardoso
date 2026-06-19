@@ -16,14 +16,14 @@
   --text-secondary: #8888a0;
   --text-tertiary: #5a5a72;
 
-  --accent-1: #7c5cfc;
-  --accent-2: #c850c0;
-  --accent-3: #4facfe;
-  --accent-glow: rgba(124, 92, 252, 0.25);
+  --accent-1: #00ff41;
+  --accent-2: #00cc33;
+  --accent-3: #39ff14;
+  --accent-glow: rgba(0, 255, 65, 0.25);
 
-  --gradient-primary: linear-gradient(135deg, #7c5cfc 0%, #c850c0 50%, #4facfe 100%);
-  --gradient-accent: linear-gradient(135deg, #7c5cfc 0%, #c850c0 100%);
-  --gradient-card: linear-gradient(135deg, rgba(124, 92, 252, 0.1) 0%, rgba(200, 80, 192, 0.05) 100%);
+  --gradient-primary: linear-gradient(135deg, #00ff41 0%, #00cc33 50%, #39ff14 100%);
+  --gradient-accent: linear-gradient(135deg, #00ff41 0%, #00cc33 100%);
+  --gradient-card: linear-gradient(135deg, rgba(0, 255, 65, 0.1) 0%, rgba(0, 204, 51, 0.05) 100%);
 
   /* Typography */
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -102,7 +102,7 @@ ul {
   width: 600px;
   height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(124, 92, 252, 0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(0, 255, 65, 0.06) 0%, transparent 70%);
   pointer-events: none;
   z-index: 0;
   transform: translate(-50%, -50%);
@@ -203,7 +203,7 @@ ul {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 40px rgba(124, 92, 252, 0.4);
+  box-shadow: 0 8px 40px rgba(0, 255, 65, 0.4);
 }
 
 .btn-primary:hover svg {
@@ -222,7 +222,7 @@ ul {
 
 .btn-outline:hover {
   border-color: var(--accent-1);
-  background: rgba(124, 92, 252, 0.08);
+  background: rgba(0, 255, 65, 0.08);
   transform: translateY(-2px);
 }
 
@@ -295,7 +295,7 @@ ul {
 }
 
 .nav-link.active {
-  background: rgba(124, 92, 252, 0.12);
+  background: rgba(0, 255, 65, 0.12);
   color: var(--accent-1);
 }
 
@@ -312,7 +312,7 @@ ul {
 
 .nav-cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 30px rgba(124, 92, 252, 0.4);
+  box-shadow: 0 6px 30px rgba(0, 255, 65, 0.4);
 }
 
 .mobile-toggle {
@@ -689,7 +689,7 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(124, 92, 252, 0.05) 0%, rgba(200, 80, 192, 0.03) 100%);
+  background: linear-gradient(135deg, rgba(0, 255, 65, 0.05) 0%, rgba(0, 204, 51, 0.03) 100%);
 }
 
 .image-border {
@@ -844,13 +844,13 @@ ul {
   justify-content: center;
   margin: 0 auto 16px;
   color: var(--accent, var(--accent-1));
-  background: rgba(124, 92, 252, 0.08);
+  background: rgba(0, 255, 65, 0.08);
   transition: var(--transition-base);
 }
 
 .skill-card:hover .skill-icon {
   transform: scale(1.1);
-  background: rgba(124, 92, 252, 0.15);
+  background: rgba(0, 255, 65, 0.15);
 }
 
 .skill-name {
@@ -895,11 +895,11 @@ ul {
   background: var(--bg-card);
   border: 1px solid var(--border-glass);
   overflow: hidden;
-  transition: var(--transition-base);
+  transition: transform 0.15s ease-out, border-color var(--transition-base), box-shadow var(--transition-base);
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-4px);
   border-color: var(--border-glass-hover);
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
 }
@@ -991,8 +991,8 @@ ul {
 .tag {
   padding: 6px 14px;
   border-radius: var(--radius-full);
-  background: rgba(124, 92, 252, 0.1);
-  border: 1px solid rgba(124, 92, 252, 0.15);
+  background: rgba(0, 255, 65, 0.1);
+  border: 1px solid rgba(0, 255, 65, 0.15);
   font-size: 0.78rem;
   color: var(--accent-1);
   font-weight: 500;
@@ -1031,7 +1031,7 @@ ul {
   height: 48px;
   min-width: 48px;
   border-radius: var(--radius-sm);
-  background: rgba(124, 92, 252, 0.1);
+  background: rgba(0, 255, 65, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1117,7 +1117,7 @@ ul {
 .form-group textarea:focus {
   border-color: var(--accent-1);
   box-shadow: 0 0 0 3px var(--accent-glow);
-  background: rgba(124, 92, 252, 0.03);
+  background: rgba(0, 255, 65, 0.03);
 }
 
 .form-group label {

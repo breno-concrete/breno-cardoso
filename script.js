@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ========== TYPED TEXT EFFECT ==========
   const typedElement = document.getElementById('typedText');
-  const words = ['Full Stack', 'Front-End', 'Criativo', 'UI/UX'];
+  const words = ['Back-End', 'Java', 'Spring Boot', 'de APIs'];
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
@@ -225,10 +225,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const y = e.clientY - rect.top;
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
-        const rotateX = (y - centerY) / 20;
-        const rotateY = (centerX - x) / 20;
+        const rotateX = (y - centerY) / 40;
+        const rotateY = (centerX - x) / 40;
 
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
       });
 
       card.addEventListener('mouseleave', () => {
